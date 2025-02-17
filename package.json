@@ -1,0 +1,19 @@
+{
+  "name": "four-card-feature__fem",
+  "version": "1.0.0",
+  "description": "Four Card Feature challenge by FrontEndMentor.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabei/Four-Card-Feature___FEM.git"
+  },
+  "author": "Gabe Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabei/Four-Card-Feature___FEM/issues"
+  },
+  "homepage": "https://github.com/gabei/Four-Card-Feature___FEM#readme"
+}
