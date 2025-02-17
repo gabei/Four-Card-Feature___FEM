@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 140%;
+}
+
+$semibold: 600;
+$regular: 400;
+$extra-light: 200; 
+
+@mixin preset($num) {
+    @if $num == 1 {
+        font-weight: $semibold;
+        font-size: 2.25rem;
+    }
+
+    @if $num == 2 {
+        font-weight: $extra-light;
+        font-size: 2.25rem;
+    }
+
+    @if $num == 3 {
+        font-weight: $semibold;
+        font-size: 1.25rem;
+        line-height: 135%;
+    }
+
+    @if $num == 4 {
+        font-weight: $regular;
+        font-size: 1rem;
+    }
+
+    @if $num == 5 {
+        font-weight: $regular;
+        font-size: 0.75rem;
+        line-height: 160%;
+    }
+}

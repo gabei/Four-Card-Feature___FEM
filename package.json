@@ -8,7 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabei/Four-Card-Feature___FEM.git"
+    "url": "git+https://github.com/gabei/Four-Card-Feature___FEM.git",
+    "compsass": "sass styles/index.scss styles/style.css"
   },
   "author": "Gabe Garcia",
   "license": "ISC",
