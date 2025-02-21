@@ -4,12 +4,12 @@
   "description": "Four Card Feature challenge by FrontEndMentor.com",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compsass": "sass styles/index.scss styles/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gabei/Four-Card-Feature___FEM.git",
-    "compsass": "sass styles/index.scss styles/style.css"
+    "url": "git+https://github.com/gabei/Four-Card-Feature___FEM.git"
   },
   "author": "Gabe Garcia",
   "license": "ISC",

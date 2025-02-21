@@ -2,3 +2,52 @@
 @use './typography.scss' as type;
 @use './size' as size;
 @use './reset.scss';
+
+
+main {
+  padding: size.$space-400;
+  display: grid;
+}
+
+.header {
+  &__text {
+    @include type.preset(2);
+    &--bold {
+      @include type.preset(1)
+    }
+  }
+
+  p {
+    @include type.preset(4);
+  }
+
+}
+
+.card {
+  padding: size.$space-400;
+  border-radius: 0.5rem;
+
+  h2 {
+    @include type.preset(3);
+  }
+
+  p {
+    @include type.preset(5);
+  }
+}
+
+.supervisor {
+  @include color.border-top(color.$cyan);
+}
+
+.team-builder {
+  @include color.border-top(color.$red);
+}
+
+.karma {
+  @include color.border-top(color.$orange);
+}
+
+.calculator {
+  @include color.border-top(color.$blue);
+}
