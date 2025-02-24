@@ -24,14 +24,17 @@ main {
 
 .header {
   color: #6A7178;
+  text-align: center;
+  display: grid;
+  gap: 0.5rem;
 }
 .header__text {
   font-weight: 200;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
 }
 .header__text--bold {
   font-weight: 600;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
 }
 .header p {
   font-weight: 400;
@@ -46,6 +49,7 @@ main {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
   gap: 2rem;
+  color: #6A7178;
 }
 .card__text {
   grid-column: 1/span 4;
