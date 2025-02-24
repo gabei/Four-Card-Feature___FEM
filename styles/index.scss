@@ -1,6 +1,7 @@
 @use './color.scss' as color;
 @use './typography.scss' as type;
 @use './size' as size;
+@use './responsive.scss' as adjust;
 @use './reset.scss';
 
 
@@ -8,6 +9,14 @@ main {
   padding: size.$space-400;
   display: grid;
   gap: 2rem;
+  max-width: 25rem;
+  margin: 0 auto;
+
+  @include adjust.tablet {
+    max-width: 50rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
 
 .header {
@@ -33,7 +42,7 @@ main {
 .card {
   padding: size.$space-400;
   border-radius: size.$space-100;
-  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.10);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
@@ -61,16 +70,34 @@ main {
 
 .supervisor {
   @include color.border-top(color.$cyan);
+
+  @include adjust.tablet {
+    grid-column: 2 / span 2;
+    grid-row-start: 1;
+  }
+  
 }
 
 .team-builder {
   @include color.border-top(color.$red);
+  @include adjust.tablet {
+    grid-column: 1 / span 2;
+    grid-row-start: 2;
+  }
 }
 
 .karma {
   @include color.border-top(color.$orange);
+  @include adjust.tablet {
+    grid-column: 3 / span 2;
+    grid-row-start: 2;
+  }
 }
 
 .calculator {
   @include color.border-top(color.$blue);
+  @include adjust.tablet {
+    grid-column: 2 / span 2;
+    grid-row-start: 3;
+  }
 }
