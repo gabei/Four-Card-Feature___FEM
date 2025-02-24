@@ -11,6 +11,7 @@ main {
 }
 
 .header {
+  color: color.$grey-500;
   &__text {
     @include type.preset(2);
     &--bold {
@@ -26,11 +27,12 @@ main {
 
 .card {
   padding: size.$space-400;
-  border-radius: 0.5rem;
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.15);
+  border-radius: size.$space-100;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
+  gap: size.$space-400;
 
   &__text {
     grid-column: 1 / span 4;
