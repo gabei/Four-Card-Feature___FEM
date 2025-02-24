@@ -2,6 +2,7 @@
 @use './typography.scss' as type;
 @use './size' as size;
 @use './responsive.scss' as adjust;
+@use './animate.scss' as animate;
 @use './reset.scss';
 
 body {
@@ -65,14 +66,14 @@ main {
   &__text {
     grid-column: 1 / span 4;
     grid-row: 1 / span 1;
-  }
 
-  h2 {
-    @include type.preset(3);
-  }
+    h2 {
+      @include type.preset(3);
+    }
 
-  p {
-    @include type.preset(5);
+    p {
+      @include type.preset(5);
+    }
   }
 
   img {
@@ -114,3 +115,5 @@ main {
     grid-row-start: 3;
   }
 }
+
+
