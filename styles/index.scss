@@ -7,6 +7,7 @@
 main {
   padding: size.$space-400;
   display: grid;
+  gap: 2rem;
 }
 
 .header {
@@ -26,6 +27,14 @@ main {
 .card {
   padding: size.$space-400;
   border-radius: 0.5rem;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.15);
+  display: grid;
+  grid-template: 1fr / 1fr / 1fr / 1fr;
+
+  &__text {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+  }
 
   h2 {
     @include type.preset(3);
@@ -33,6 +42,11 @@ main {
 
   p {
     @include type.preset(5);
+  }
+
+  img {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
   }
 }
 
