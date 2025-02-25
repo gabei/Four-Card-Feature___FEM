@@ -89,17 +89,21 @@ main {
 .supervisor {
   @include color.border-top(color.$cyan);
   @include animate.after-bg(color.$cyan);
+  @include animate.focus-color(color.$cyan);
 
   @include adjust.tablet {
     grid-column: 2 / span 2;
     grid-row-start: 1;
   }
 
+  
+
 }
 
 .team-builder {
   @include color.border-top(color.$red);
   @include animate.after-bg(color.$red);
+  @include animate.focus-color(color.$red);
   @include adjust.tablet {
     grid-column: 1 / span 2;
     grid-row-start: 2;
@@ -109,6 +113,7 @@ main {
 .karma {
   @include color.border-top(color.$orange);
   @include animate.after-bg(color.$orange);
+  @include animate.focus-color(color.$orange);
   @include adjust.tablet {
     grid-column: 3 / span 2;
     grid-row-start: 2;
@@ -118,9 +123,19 @@ main {
 .calculator {
   @include color.border-top(color.$blue);
   @include animate.after-bg(color.$blue);
+  @include animate.focus-color(color.$blue);
   @include adjust.tablet {
     grid-column: 2 / span 2;
     grid-row-start: 3;
+  }
+}
+
+.attribution { 
+  font-size: 11px;
+  text-align: center;
+  
+  & a { 
+    color: hsl(228, 45%, 44%); 
   }
 }
 

@@ -110,11 +110,16 @@ main {
   background: #44D3D2;
   z-index: -1;
   opacity: 0;
-  transition: all 0.25s;
+  transition: all 0.2s;
 }
 .supervisor:hover:after {
   transform: scale(1.02, 1.035);
   opacity: 1;
+}
+.supervisor h2:focus-visible {
+  outline: 2px solid #44D3D2;
+  outline-offset: 0.1rem;
+  border-radius: 0.5rem;
 }
 @media screen and (min-width: 750px) {
   .supervisor {
@@ -137,11 +142,16 @@ main {
   background: #EA5454;
   z-index: -1;
   opacity: 0;
-  transition: all 0.25s;
+  transition: all 0.2s;
 }
 .team-builder:hover:after {
   transform: scale(1.02, 1.035);
   opacity: 1;
+}
+.team-builder h2:focus-visible {
+  outline: 2px solid #EA5454;
+  outline-offset: 0.1rem;
+  border-radius: 0.5rem;
 }
 @media screen and (min-width: 750px) {
   .team-builder {
@@ -164,11 +174,16 @@ main {
   background: #FCAE4A;
   z-index: -1;
   opacity: 0;
-  transition: all 0.25s;
+  transition: all 0.2s;
 }
 .karma:hover:after {
   transform: scale(1.02, 1.035);
   opacity: 1;
+}
+.karma h2:focus-visible {
+  outline: 2px solid #FCAE4A;
+  outline-offset: 0.1rem;
+  border-radius: 0.5rem;
 }
 @media screen and (min-width: 750px) {
   .karma {
@@ -191,17 +206,30 @@ main {
   background: #549EF2;
   z-index: -1;
   opacity: 0;
-  transition: all 0.25s;
+  transition: all 0.2s;
 }
 .calculator:hover:after {
   transform: scale(1.02, 1.035);
   opacity: 1;
+}
+.calculator h2:focus-visible {
+  outline: 2px solid #549EF2;
+  outline-offset: 0.1rem;
+  border-radius: 0.5rem;
 }
 @media screen and (min-width: 750px) {
   .calculator {
     grid-column: 2/span 2;
     grid-row-start: 3;
   }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 /*# sourceMappingURL=style.css.map */
