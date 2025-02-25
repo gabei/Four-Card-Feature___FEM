@@ -15,12 +15,12 @@ $extra-light: 200;
 @mixin preset($num) {
     @if $num == 1 {
         font-weight: $semibold;
-        font-size: 2.25rem;
+        font-size: 1.5rem;
     }
 
     @if $num == 2 {
         font-weight: $extra-light;
-        font-size: 2.25rem;
+        font-size: 1.5rem;
     }
 
     @if $num == 3 {

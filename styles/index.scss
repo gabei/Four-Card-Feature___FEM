@@ -49,9 +49,16 @@ main {
   &__text {
     @include type.preset(2);
 
+    @include adjust.tablet {
+      font-size: 2.25rem;
+    }
+
     &--bold {
       @include type.preset(1);
       margin-bottom: 1rem;
+      @include adjust.tablet {
+        font-size: 2.25rem;
+      }
     }
   }
 
