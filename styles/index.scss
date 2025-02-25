@@ -9,14 +9,14 @@ body {
   padding: 2rem;
 
   @include adjust.tablet {
-    padding: 5rem 3rem;
+    padding: 4rem 3rem;
   }
 }
 
 main {
   padding: size.$space-400;
+  gap: size.$space-400;
   display: grid;
-  gap: 2rem;
   max-width: 25rem;
   margin: 0 auto;
 
@@ -41,13 +41,17 @@ main {
   color: color.$grey-500;
   text-align: center;
   display: grid;
-  gap: size.$space-250;
+
+  @include adjust.desktop {
+    padding: 2rem;
+  }
 
   &__text {
     @include type.preset(2);
 
     &--bold {
       @include type.preset(1);
+      margin-bottom: 1rem;
     }
   }
 
