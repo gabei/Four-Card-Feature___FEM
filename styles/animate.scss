@@ -1,21 +1,21 @@
-@keyframes jiggle {
-  0% {
-    transform:rotate(0deg);
+@use './size.scss' as size;
+@mixin after-bg($color) {
+  &:after {
+    content: "";
+    border-radius: size.$space-100;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: $color;
+    z-index:-1;
+    opacity: 0;
+    transition: all 0.25s;
   }
-
-  25% {
-    transform:rotate(15deg);
-  }
-
-  50% {
-    transform:rotate(-15deg);
-  }
-
-  75% {
-    transform:rotate(15deg);
-  }
-
-  100% {
-    transform:rotate(0deg);
+  
+  &:hover:after {
+    transform: scale(1.02, 1.035);
+    opacity: 1;
   }
 }

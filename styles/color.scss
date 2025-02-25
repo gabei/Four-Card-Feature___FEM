@@ -11,3 +11,7 @@ $orange: #FCAE4A;
 @mixin border-top($color) {
   border-top: 3px solid $color;
 }
+
+@mixin add-all-borders($color) {
+  border: 3px solid $color;
+}
