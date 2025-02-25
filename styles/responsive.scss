@@ -1,5 +1,12 @@
 $small-phone: 400px;
 $tablet: 750px;
+$desktop: 1024px;
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media screen and (min-width: $tablet) {
