@@ -1,9 +1,9 @@
-@use './color.scss' as color;
-@use './typography.scss' as type;
-@use './size' as size;
-@use './responsive.scss' as adjust;
-@use './animate.scss' as animate;
-@use './reset.scss';
+@use "./color.scss" as color;
+@use "./typography.scss" as type;
+@use "./size" as size;
+@use "./responsive.scss" as adjust;
+@use "./animate.scss" as animate;
+@use "./reset.scss";
 
 body {
   padding: 2rem;
@@ -12,7 +12,6 @@ body {
     padding: 3rem;
   }
 }
-
 
 main {
   padding: size.$space-400;
@@ -30,7 +29,6 @@ main {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
-
 }
 
 .header {
@@ -50,7 +48,6 @@ main {
   p {
     @include type.preset(4);
   }
-
 }
 
 .card {
@@ -58,7 +55,7 @@ main {
   background: white;
   padding: size.$space-400;
   border-radius: size.$space-100;
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.1);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
@@ -95,9 +92,6 @@ main {
     grid-column: 2 / span 2;
     grid-row-start: 1;
   }
-
-  
-
 }
 
 .team-builder {
@@ -130,13 +124,11 @@ main {
   }
 }
 
-.attribution { 
-  font-size: 11px;
+.attribution {
+  font-size: size.$space-150;
   text-align: center;
-  
-  & a { 
-    color: hsl(228, 45%, 44%); 
+
+  & a {
+    color: hsl(228, 45%, 44%);
   }
 }
-
-
